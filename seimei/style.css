@@ -1,0 +1,21 @@
+.bar_tooltip {
+     position:absolute;
+     font-size : 14px;
+     background : #fff;
+     boarder-radius : 4px;
+     border-color : black;
+     padding : 8px;
+     opacity : 0.9;
+     box-shadow : 0px 0px 2px 0px #a6a6a6;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}

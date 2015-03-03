@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="d3.min.js"></script>
+    <script src="vis.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<p>Barchart visualization(Video Length (seconds))</p>
+<div id="vis">
+
+</div>
+<script>
+
+
+    var chart = barchart().width(800).height(300).yLabel("Video Length (seconds)"),
+        svg = d3.select("#vis").append("svg")
+            .attr("id", "barchart")
+            .attr("height",300)
+            .attr("width",1000);
+
+
+    d3.csv("sample.csv", function(csv){
+
+        var views = [],
+            lengths = [];
+
+        csv.map(function(d){
+            views.push(+d.views);
+            lengths.push(+d.length);
+        })
+
+        d3.select("#vis").datum(lengths).call(chart);
+    });
+
+
+
+
+
+</script>
+
+</body>
+</html>
