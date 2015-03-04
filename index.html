@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Master Project Visualizations</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS Lib -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./lib/css/site.css">
-    <!-- JS Lib -->
-    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <title>Master Project Visualizations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS Lib -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./lib/css/site.css">
+  <!-- JS Lib -->
+  <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Master Project Visualizations</a>
-            </div>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Master Project Visualizations</a>
+      </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="visual.html">Visualizations</a></li>
-                    <li><a href="data.html">Data</a></li>
-                    <li><a href="tools.html">Tools</a></li>
-                    <li><a href="team.html">Team</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right"></ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="visual.html">Visualizations</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right"></ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
-    <div class="container">
-        <div class="jumbotron">
-            <h2>Visualization Of YouTube Dataset</h2>
-            <p>This project is about visualizing <a herf="http://netsg.cs.sfu.ca/youtubedata/">YouTube dataset</a>. We will implement a set of linked and interactive visualizations referring to a paper, <a herf="http://www.computer.org/csdl/trans/tg/2013/12/ttg2013122606.html">GPLOM</a>. Our core functionality is to provide users with a web interface and allow them to be able to explore the data through it. For example, users may find what are the top 3 categories viewed, or what is the most popular video rated in a certain day. The interface will be composed of a set of functionality that the paper describes such as filtering, linking, or text search.</p>
-        </div>
-        <div class="col-md-5">
-            <img src="./lib/img/design.png" align="middle" width="400">
-            <p align="center"><b>Figure 1. Design Overview</b></p>
-        </div>
-        <div class="col-md-7">
-            <p class="text">In this project, there are a few components: a website to put our visualizations, a preprocessed dataset, and a JavaScript library. As figure 1 shows, we will first load and then visualize the dataset using D3.</p>
-        </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Visualization Of YouTube Dataset</h2>
+      <p>This project is about visualizing <a herf="http://netsg.cs.sfu.ca/youtubedata/">YouTube dataset</a>. We will implement a set of linked and interactive visualizations referring to a paper, <a herf="http://www.computer.org/csdl/trans/tg/2013/12/ttg2013122606.html">GPLOM</a>. Our core functionality is to provide users with a web interface and allow them to be able to explore the data through it. For example, users may find what are the top 3 categories viewed, or what is the most popular video rated in a certain day. The interface will be composed of a set of functionality that the paper describes such as filtering, linking, or text search.</p>
     </div>
+    <div class="col-md-6">
+      <img src="./lib/img/design.png" style="text-align:center;">
+      <p align="center"><b>Figure 1. Design Overview</b></p>
+    </div>
+    <div class="col-md-6">
+      <p style="font-size:20px;">In this project, there are a few components: a website to put our visualizations, a preprocessed dataset, and a JavaScript library. As figure 1 shows, we will first load and then visualize the dataset using D3, and hence put it on our website. We are trying to use GPLOM (Generalized Plot Matrix) for our visualizations. It is a variant of scatterplot matrices, and also a matrix to show multiple features. That is to say, we need to implement the following modules first: Scatterplot, barchart and heatmap. Each of them should be resizable and reusable. Another module, controller, manages them and constructs the matrix, setting up proper chart types to different combinations of feature values.</p>
+    </div>
+    <div class="col-md-12">
 
-    <footer class="well">
-        CS690 Master Project, Spring 2015.
-        <a href="http://www.cs.usfca.edu/">Computer Science Department</a>
-        of
-        <a href="http://www.usfca.edu/">University of San Francisco</a>.
-    </footer>
+    </div>
+  </div>
+
+  <footer class="well">
+    CS690 Master Project, Spring 2015.
+    <a href="http://www.cs.usfca.edu/">Computer Science Department</a>
+    of
+    <a href="http://www.usfca.edu/">University of San Francisco</a>.
+  </footer>
 </body>
 </html>
