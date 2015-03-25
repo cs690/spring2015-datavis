@@ -29,7 +29,7 @@
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
           <li class="dropdown">
-            <a href="visual.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Visualizations<span class="caret"></span></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Visualizations<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="visual_1.html">Prototypes</a></li>
               <li><a href="visual_2.html">GPLOM</a></li>
@@ -86,6 +86,17 @@
         Some of them (e.g., Video ID or Views) are self-explanatory but some of them are not. Age means how old the video is, not the uploader; The difference between Rate and Ratings is that Ratings represents how many times the video has been rated while Rate is the actual rate value; similarly, Comments represents how many comments have been posted, not what people commented.
         More than 100 datasets are available on the original site. Since the duration time of the web-crawler is different, each dataset has a different size. A small one is, for example, only less than 100KB, but a big one can be more than 10MB. The oldest dataset was created on February 2007; the newest was on September 2008.
       </p>
+    </div>
+    <div class="col-md-12">
+      <p style="font-size:18px;">We also have categorical data. The mapping of categories is like this:</p>
+      <pre style="font-size:18px;">
+views:                           rates:
+1 -> views < 10000               1 -> rates between 0 and 1
+2 -> views < 50000               2 -> rates between 1 and 2
+3 -> views < 100000              3 -> rates between 2 and 3
+4 -> views >= 100000             4 -> rates between 3 and 4
+                                 5 -> rates between 4 and 5
+      </pre>
     </div>
   </div>
 
