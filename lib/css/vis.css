@@ -40,6 +40,9 @@
 td {
     position: relative;
     text-align:center;
+    border-color:#ddd;
+    border-width:1px;
+    border-style:solid;
 }
 
 .labelleft{
