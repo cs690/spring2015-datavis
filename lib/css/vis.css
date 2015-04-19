@@ -36,16 +36,24 @@
     border-radius: 2px;
 }
 
-
 td {
     position: relative;
     text-align:center;
+}
+
+.cell-inner{
     border-color:#ddd;
     border-width:1px;
     border-style:solid;
 }
 
-.labelleft{
+.cell-outer{
+    border-color:#ddd;
+    border-width:1px;
+    border-style:solid;
+}
+
+.label-left{
     -ms-transform: rotate(270deg); /* IE 9 */
     -webkit-transform: rotate(270deg); rotate(90deg); /* Safari */
     transform: rotate(270deg);
