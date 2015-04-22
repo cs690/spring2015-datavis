@@ -7,6 +7,12 @@
   shape-rendering: crispEdges;
 }
 
+.selection{
+    fill:none;
+    stroke:black;
+    stroke-width:1px;
+}
+
 .scatter {
   stroke: #FFF;
   stroke-width:0.5px;
