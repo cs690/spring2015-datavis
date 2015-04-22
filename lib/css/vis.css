@@ -7,8 +7,15 @@
   shape-rendering: crispEdges;
 }
 
+.selection{
+    fill:none;
+    stroke:black;
+    stroke-width:1px;
+}
+
 .scatter {
-  stroke: #000;
+  stroke: #FFF;
+  stroke-width:0.5px;
 }
 
 .bar_tooltip {

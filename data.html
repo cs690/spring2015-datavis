@@ -45,58 +45,80 @@
   </nav>
 
   <div class="container">
-    <div class="col-md-12">
-      <p style="font-size:18px;">
-        Our datasets are about YouTube vedios. In more detail, these are collected by a web-crawler using YouTube APIs, and publically available in a webpage of Simon Fraser University.
-        The raw data contains the following features:
-      </p>
-    </div>
-    <div class="col-md-12">
-      <table class="table table-bordered">
-        <thead>
+    <div class="row">
+      <div class="col-md-12">
+        <p style="font-size:18px;">
+          Our datasets are about <a href="http://netsg.cs.sfu.ca/youtubedata/">YouTube Videos</a>. in more detail, these are collected by a web-crawler using youtube apis, and publically available in a webpage of simon fraser university.
+   the raw data contains the following features
+        </p>
+      </div>
+      <div class="col-md-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Video ID</th>
+              <th>Uploader</th>
+              <th>Age</th>
+              <th>Category</th>
+              <th>Length</th>
+              <th>Views</th>
+              <th>Rate</th>
+              <th>Ratings</th>
+              <th>Comments</th>
+              <th>Related IDs</th>
+            </tr>
+          </thead>
           <tr>
-            <th>Video ID</th>
-            <th>Uploader</th>
-            <th>Age</th>
-            <th>Category</th>
-            <th>Length</th>
-            <th>Views</th>
-            <th>Rate</th>
-            <th>Ratings</th>
-            <th>Comments</th>
-            <th>Related IDs</th>
+            <th>bRPeEVpHiI8</th>
+            <th>ufc</th>
+            <th>744</th>
+            <th>Sports</th>
+            <th>154</th>
+            <th>331333</th>
+            <th>3.32</th>
+            <th>1284</th>
+            <th>103</th>
+            <th>"bRPeEVpHiI8,D7-oJH4TR88,etc"</th>
           </tr>
-        </thead>
-        <tr>
-          <th>bRPeEVpHiI8</th>
-          <th>ufc</th>
-          <th>744</th>
-          <th>Sports</th>
-          <th>154</th>
-          <th>331333</th>
-          <th>3.32</th>
-          <th>1284</th>
-          <th>103</th>
-          <th>"bRPeEVpHiI8,D7-oJH4TR88,etc"</th>
-        </tr>
-      </table>
-    </div>
-    <div class="col-md-12">
-      <p style="font-size:18px;">
-        Some of them (e.g., Video ID or Views) are self-explanatory but some of them are not. Age means how old the video is, not the uploader; The difference between Rate and Ratings is that Ratings represents how many times the video has been rated while Rate is the actual rate value; similarly, Comments represents how many comments have been posted, not what people commented.
-        More than 100 datasets are available on the original site. Since the duration time of the web-crawler is different, each dataset has a different size. A small one is, for example, only less than 100KB, but a big one can be more than 10MB. The oldest dataset was created on February 2007; the newest was on September 2008.
-      </p>
-    </div>
-    <div class="col-md-12">
-      <p style="font-size:18px;">We also have categorical data. The mapping of categories is like this:</p>
-      <pre style="font-size:18px;">
-views:                           rates:
-1 -> views < 10000               1 -> rates between 0 and 1
-2 -> views < 50000               2 -> rates between 1 and 2
-3 -> views < 100000              3 -> rates between 2 and 3
-4 -> views >= 100000             4 -> rates between 3 and 4
-                                 5 -> rates between 4 and 5
-      </pre>
+        </table>
+      </div>
+      <div class="col col-md-12">
+        <p style="font-size:18px;">
+          Some of them (e.g., Video ID or Views) are self-explanatory but some of them are not. Age means how old the video is, not the uploader; The difference between Rate and Ratings is that Ratings represents how many times the video has been rated while Rate is the actual rate value; similarly, Comments represents how many comments have been posted, not what people commented.
+          More than 100 datasets are available on the original site. Since the duration time of the web-crawler is different, each dataset has a different size. A small one is, for example, only less than 100KB, but a big one can be more than 10MB. The oldest dataset was created on February 2007; the newest was on September 2008.
+        </p>
+      </div>
+      <div class="col col-md-12">
+        <p style="font-size:18px;">We also have categorical data. The mapping of categories is like this:</p>
+        <div class="row">
+          <div class="col col-md-4">
+            <h3>Views:</h3>
+            <p>1 -> views < 10k</p>
+            <p>2 -> views < 50k</p>
+            <p>3 -> views < 100k</p>
+            <p>4 -> views >= 100k</p>
+          </div>
+          <div class="col col-md-4">
+            <h3>Stars:</h3>
+            <p>1 -> rates between 0 and 1</p>
+            <p>2 -> rates between 1 and 2</p>
+            <p>3 -> rates between 2 and 3</p>
+            <p>4 -> rates between 3 and 4</p>
+            <p>5 -> rates between 4 and 5</p>
+          </div>
+          <div class="col col-md-4">
+            <h3>Categories:</h3>
+            <p><b style="color:#a6cee3">Comedy</b></p>
+            <p><b style="color:#b2df8a">Entertainment</b></p>
+            <p><b style="color:#33a02c">Film & Animation</b></p>
+            <p><b style="color:#fb9a99">Music</b></p>
+            <p><b style="color:#fdbf6f">News & Politics</b></p>
+            <p><b style="color:#ff7f00">People & Blogs</b></p>
+            <p><b style="color:#cab2d6">Sports</b></p>
+            <p><b style="color:#6a3d9a">Others</b></p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
