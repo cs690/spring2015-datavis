@@ -6,12 +6,16 @@
   <!-- CSS Lib -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./lib/css/site.css">
+  <link rel="stylesheet" href="./lib/css/uikit.min.css">
+  <link rel="stylesheet" href="./lib/css/components/notify.css">
   <link rel="stylesheet" type="text/css" href="./lib/css/vis.css">
   <!-- JS Lib -->
   <script src="./lib/js/d3.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <script src="./lib/js/uikit.min.js"></script>
+  <script src="./lib/js/components/notify.js"></script>
   <script src="./lib/js/vis.js"></script>
 </head>
 <body>
@@ -50,11 +54,12 @@
 
   <div class="container">
     <div id="gplom" class="col-md-8">
-      <h3>GPLOM</h3>
+      <h3 style="cursor: pointer" onclick=notify("GPLOM")>GPLOM</h3>
       <table>
         <tr>
           <td>
-            <div class="label-left" style="font-size:large;">Category</div>
+            <div class="label-left" style="font-size:large; cursor:pointer"
+                 onclick=notify("category")>Category</div>
           </td>
           <td class="cell-label">
             <div id="row1label"></div>
@@ -67,7 +72,8 @@
         </tr>
         <tr>
           <td class="">
-            <div class="label-left" style="font-size:large;">Stars</div>
+            <div class="label-left" style="font-size:large; cursor:pointer"
+                 onclick=notify("stars")>Stars</div>
           </td>
           <td class="cell-label">
             <div id="row2label"></div>
@@ -80,7 +86,8 @@
         </tr>
         <tr>
           <td>
-            <div class="label-left" style="font-size:large;">Comments</div>
+            <div class="label-left" style="font-size:large; cursor:pointer"
+                 onclick=notify("comments")>Comments</div>
           </td>
           <td class="cell-label">
             <div id="row3label"></div>
@@ -93,7 +100,8 @@
         </tr>
         <tr>
           <td>
-            <div class="label-left" style="font-size:large;">Ratings</div>
+            <div class="label-left" style="font-size:large; cursor:pointer"
+                 onclick=notify("ratings")>Ratings</div>
           </td>
           <td class="cell-label">
             <div id="row4label"></div>
@@ -105,7 +113,8 @@
           <td id="cell20" class="cell-inner"></td>
         </tr>
         <tr>
-          <td><div class="label-left" style="font-size:large;">Length</div></td>
+          <td><div class="label-left" style="font-size:large; cursor:pointer"
+                 onclick=notify("length")>Length</div></td>
           <td class="cell-label">
             <div id="row5label"></div></td>
           <td id="cell21" class="cell-outer"></td>
@@ -119,24 +128,28 @@
           <td></td>
           <td class="cell-label">
             <div id="col1label"></div>
-            <div class="label-bottom" style="font-size:large; text-align:center;">Views</div>
+            <div class="label-bottom" style="font-size:large; text-align:center; cursor:pointer;"
+                 onclick=notify("views")>Views</div>
           </td>
           <td class="cell-label">
             <div id="col2label"></div>
-            <div class="label-bottom" style="font-size:large; text-align:center;">Category</div>
+            <div class="label-bottom" style="font-size:large; text-align:center; cursor: pointer"
+                 onclick=notify("category")>Category</div>
           </td>
           <td class="cell-label">
             <div id="col3label"></div>
-            <div class="label-bottom" style="font-size:large; text-align:center;">Stars</div>
+            <div class="label-bottom" style="font-size:large; text-align:center; cursor:pointer;"
+                 onclick=notify("stars")>Stars</div>
           </td>
           <td class="cell-label">
             <div id="col4label"></div>
-            <div class="label-bottom" style="font-size:large; text-align:center;">Comments</div>
+            <div class="label-bottom" style="font-size:large; text-align:center; cursor:pointer;"
+                 onclick=notify("comments")>Comments</div>
           </td>
-
           <td class="cell-label">
             <div id="col5label"></div>
-            <div class="label-bottom" style="font-size:large; text-align:center;">Ratings</div>
+            <div class="label-bottom" style="font-size:large; text-align:center; cursor: pointer;"
+                 onclick=notify("ratings")>Ratings</div>
           </td>
         </tr>
       </table>
