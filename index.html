@@ -47,14 +47,15 @@
   <div class="container">
     <div class="jumbotron">
       <h2>Visualization Of YouTube Dataset</h2>
-      <p>This project is about visualizing <a href="http://netsg.cs.sfu.ca/youtubedata/">YouTube dataset</a>. We will implement a set of linked and interactive visualizations referring to a paper, <a href="http://www.computer.org/csdl/trans/tg/2013/12/ttg2013122606.html">GPLOM</a>. Our core functionality is to provide users with a web interface and allow them to be able to explore the data through it. For example, users may find what are the top 3 categories viewed, or what is the most popular video rated in a certain day. The interface will be composed of a set of functionality that the paper describes such as filtering, linking, or text search.</p>
+      <p>This project visualizes the <a href="http://netsg.cs.sfu.ca/youtubedata/">YouTube dataset video</a> available at Simon Fraser University. We implement a set of linked and interactive visualizations referring to the paper <a href="http://www.computer.org/csdl/trans/tg/2013/12/ttg2013122606.html">"GPLOM: The Generalized Plot Matrix for Visualizing Multidimensional Multivariate Data."</a> Our goal is to provide users with a web interface and allow them to explore the data through it. For example, users can find out what the top 3 most frequently viewed categories are or what kinds of videos are most highly rated.</p>
     </div>
     <div class="col-md-6">
       <img src="./lib/img/design.png" style="text-align:center;">
       <p align="center"><b>Figure 1. Design Overview</b></p>
     </div>
     <div class="col-md-6">
-      <p style="font-size:20px;">In this project, there are a few components: a website to put our visualizations, a preprocessed dataset, and a JavaScript library. As figure 1 shows, we will first load and then visualize the dataset using D3, and hence put it on our website. We are trying to use GPLOM (Generalized Plot Matrix) for our visualizations. It is a variant of scatterplot matrices, and also a matrix to show multiple features. That is to say, we need to implement the following modules first: Scatterplot, barchart and heatmap. Each of them should be resizable and reusable. Another module, controller, manages them and constructs the matrix, setting up proper chart types to different combinations of feature values.</p>
+      <p style="font-size:20px;">The overall structure of this visualization project consists simply of three components: this website, the dataset, and JavaScript libraries. As figure 1 shows, we first read data from the dataset and visualize it using D3.js. GPLOM is used as a visualization technique. It is a variant of scatterplot matrices and consists of a scatterplot, barchart, and heatmap. Each one deals with different combinations of features in the dataset, as follows:<br><br>Heatmap ¨C two categorical features<br>Scatterplot ¨C two numerical features<br>Barchart ¨C numerical and categorical features.
+      </p>
     </div>
     <div class="col-md-12">
 

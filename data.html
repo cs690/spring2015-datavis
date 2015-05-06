@@ -47,9 +47,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+        <h1>Explanations:</h1>
         <p style="font-size:18px;">
-          Our datasets are about <a href="http://netsg.cs.sfu.ca/youtubedata/">YouTube Videos</a>. in more detail, these are collected by a web-crawler using youtube apis, and publically available in a webpage of simon fraser university.
-   the raw data contains the following features
+          Datasets that we use for this project are about <a href="http://netsg.cs.sfu.ca/youtubedata/">YouTube Videos</a>. The data is collected by a webcrawler using YouTube APIs and is publically available on a web page at Simon Fraser University¡¯s website. The raw data contains the features described below.
         </p>
       </div>
       <div class="col-md-12">
@@ -84,44 +84,52 @@
       </div>
       <div class="col col-md-12">
         <p style="font-size:18px;">
-          Some of them (e.g., Video ID or Views) are self-explanatory but some of them are not. Age means how old the video is, not the uploader; The difference between Rate and Ratings is that Ratings represents how many times the video has been rated while Rate is the actual rate value; similarly, Comments represents how many comments have been posted, not what people commented.
-          More than 100 datasets are available on the original site. Since the duration time of the web-crawler is different, each dataset has a different size. A small one is, for example, only less than 100KB, but a big one can be more than 10MB. The oldest dataset was created on February 2007; the newest was on September 2008.
+          Some of them (e.g. Video ID) will be self-explanatory, but several will not be. Age refers to how old the video (not the uploader) is. The difference between Rate and Ratings is that Ratings represents how many times the video has been rated while Rate is the actual rating value (number of stars); similarly, Comments represents how many comments have been posted rather than what people have commented.
         </p>
       </div>
       <div class="col col-md-12">
-        <p style="font-size:18px;">We also have categorical data. The mapping of categories is like this:</p>
+        <p style="font-size:18px;">
+          More than 100 datasets are available on the original site. Since the duration time of the webcrawler is different, each dataset has a different size. A small one is, for example, less than 100KB, but a large one can be more than 10MB. The oldest dataset was created on February 2007, and the newest on September 2008. We are using a dataset (0.txt) created on March 2, 2007.
+          In order to visualize it, we preprocessed the data: Views, Rate (aka Stars), and Length changed numerical values to categorical values. The details are as follows:
+        </p>
         <div class="row">
           <div class="col col-md-4">
             <h3>Views:</h3>
-            <p>1 -> views < 10k</p>
-            <p>2 -> views < 50k</p>
-            <p>3 -> views < 100k</p>
-            <p>4 -> views >= 100k</p>
+            <p>1: views < 10k</p>
+            <p>2: views < 50k</p>
+            <p>3: views < 100k</p>
+            <p>4: views >= 100k</p>
           </div>
           <div class="col col-md-4">
             <h3>Stars:</h3>
-            <p>1 -> rates between 0 and 1</p>
-            <p>2 -> rates between 1 and 2</p>
-            <p>3 -> rates between 2 and 3</p>
-            <p>4 -> rates between 3 and 4</p>
-            <p>5 -> rates between 4 and 5</p>
+            <p>1: rates between 0 and 1</p>
+            <p>2: rates between 1 and 2</p>
+            <p>3: rates between 2 and 3</p>
+            <p>4: rates between 3 and 4</p>
+            <p>5: rates between 4 and 5</p>
           </div>
           <div class="col col-md-4">
             <h3>Categories:</h3>
-            <p><b style="color:#a6cee3">Comedy</b></p>
-            <p><b style="color:#b2df8a">Entertainment</b></p>
-            <p><b style="color:#33a02c">Film & Animation</b></p>
-            <p><b style="color:#fb9a99">Music</b></p>
-            <p><b style="color:#fdbf6f">News & Politics</b></p>
-            <p><b style="color:#ff7f00">People & Blogs</b></p>
-            <p><b style="color:#cab2d6">Sports</b></p>
-            <p><b style="color:#6a3d9a">Others</b></p>
+            <p><b>Comedy</b></p>
+            <p><b>Entertainment</b></p>
+            <p><b>Film & Animation</b></p>
+            <p><b>Music</b></p>
+            <p><b>News & Politics</b></p>
+            <p><b>People & Blogs</b></p>
+            <p><b>Sports</b></p>
+            <p><b>Others</b></p>
           </div>
         </div>
       </div>
+      <div class="col-md-12" style="font-size:18px;">
+        <h1>Findings:</h1>
+        What we learned from the dataset using our visualization and consider to be of interest are the following three points.<br><br>
+        First, people rate videos more often as the number of video views increases. This is not surprising, but if the number of views exceeds 100,000, the number of ratings suddenly increases significantly.<br><br>
+        Second, by contrast, this is not true for the number of comments. The number of both comments and ratings increases monotonically as the number of views increases; yet, the number of comments does not increase as much as the ratings when the views exceed 100,000. This may imply that people tend to rate only, rather than making a comment, when they watch popular videos.<br><br>
+        Finally, ratings tend to be higher as the length of the video increases. In other words, people seem to prefer longer videos over shorter ones in general. Meanwhile, the length tends to decrease as videos are viewed repeatedly. Our thinking about this is because shorter videos are easier to view and to share.
+      </div>
     </div>
   </div>
-
   <footer class="well">
     CS690 Master Project, Spring 2015.
     <a href="http://www.cs.usfca.edu/">Computer Science Department</a>
