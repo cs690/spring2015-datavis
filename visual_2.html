@@ -36,13 +36,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
-          <li class="dropdown active">
-            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Visualizations<span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="visual_1.html">Prototypes</a></li>
-              <li><a href="visual_2.html">GPLOM</a></li>
-            </ul>
-          </li>
+          <li class="active"><a href="visual_2.html">Visualization</a></li>
           <li><a href="data.html">Data</a></li>
           <li><a href="tools.html">Tools</a></li>
           <li><a href="team.html">Team</a></li>
@@ -53,14 +47,17 @@
   </nav>
 
   <div class="container">
-    <div id="gplom" class="col-md-8">
+    <div id="gplom">
       <h1 style="cursor: pointer" onclick=notify("GPLOM")>GPLOM</h1>
+      <p style="font-size:18px">
+        <b>How to use this visualization:</b><br />
+        Click X/Y labels: brief explanation is shown on a notification box.<br />
+        Click a "Sort" check box: charts in the same column are sorted.<br />
+        Move the pointer over an element: data of the element is shown on a tooltip.<br />
+      </p>
       <table>
         <tr>
-          <td>
-            <div class="label-left" style="font-size:large; cursor:pointer; margin-left: 100px;"
-                 onclick=notify("category")>Category</div>
-          </td>
+          <td class="label-left" style="font-size:large; cursor:pointer; margin-bottom:0px" onclick=notify("category")>Category</td>
           <td class="cell-label">
             <div id="row1label"></div>
           </td>
@@ -71,10 +68,7 @@
           <td id="cell5"></td>
         </tr>
         <tr>
-          <td>
-            <div class="label-left" style="font-size:large; cursor:pointer; margin-left: 100px;"
-                 onclick=notify("stars")>Stars</div>
-          </td>
+          <td class="label-left" style="font-size:large; cursor:pointer; margin-bottom:0px" onclick=notify("stars")>Stars</td>
           <td class="cell-label">
             <div id="row2label"></div>
           </td>
@@ -85,10 +79,7 @@
           <td id="cell10" ></td>
         </tr>
         <tr>
-          <td>
-            <div class="label-left" style="font-size:large; cursor:pointer; margin-left: 100px;"
-                 onclick=notify("comments")>Comments</div>
-          </td>
+          <td class="label-left" style="font-size:large; cursor:pointer; margin-bottom:0px" onclick=notify("comments")>Comments</td>
           <td class="cell-label">
             <div id="row3label"></div>
           </td>
@@ -99,10 +90,7 @@
           <td id="cell15"></td>
         </tr>
         <tr>
-          <td>
-            <div class="label-left" style="font-size:large; cursor:pointer; margin-left: 100px;"
-                 onclick=notify("ratings")>Ratings</div>
-          </td>
+          <td class="label-left" style="font-size:large; cursor:pointer; margin-bottom:0px" onclick=notify("ratings")>Ratings</td>
           <td class="cell-label">
             <div id="row4label"></div>
           </td>
@@ -113,10 +101,7 @@
           <td id="cell20"></td>
         </tr>
         <tr>
-          <td>
-            <div class="label-left" style="font-size:large; cursor:pointer; margin-left: 100px;"
-                 onclick=notify("length")>Length</div>
-          </td>
+          <td class="label-left" style="font-size:large; cursor:pointer; margin-bottom:0px" onclick=notify("length")>Length</td>
           <td class="cell-label">
             <div id="row5label"></div>
           </td>
