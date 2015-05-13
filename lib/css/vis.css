@@ -62,9 +62,15 @@ td {
 }
 
 .label-left{
-    -ms-transform: rotate(270deg); /* IE 9 */
-    -webkit-transform: rotate(270deg); rotate(90deg); /* Safari */
-    transform: rotate(270deg);
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    vertical-align:bottom;
+    padding-bottom: 50px;
+}
+
+.noborder{
+    border:none;
+    border-width:0px;
 }
 
 .avator{
