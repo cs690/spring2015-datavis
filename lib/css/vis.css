@@ -61,10 +61,19 @@ td {
 }
 
 .label-left {
+    font-size:large;
+    cursor:pointer;
     white-space: nowrap;
     transform: rotate(-90deg);
     vertical-align: bottom;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
+}
+
+.label-bottom{
+    font-size:large;
+    text-align:center;
+    cursor:pointer;
+    margin-top:30px;
 }
 
 .avator {
